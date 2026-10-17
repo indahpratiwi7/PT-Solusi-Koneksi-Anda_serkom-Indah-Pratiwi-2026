@@ -1,0 +1,386 @@
+@import 'bootstrap/dist/css/bootstrap.min.css';
+
+/* ========================================
+   WARNA UTAMA WEBSITE
+======================================== */
+
+:root {
+    --primary-blue: #0B3D91;
+    --dark-blue: #0B3D91;
+    --light-blue: #EAF2FF;
+    --hover-blue: #1769E0;
+    --background: #F7F9FC;
+    --text-dark: #1F2937;
+    --text-muted: #6B7280;
+    --white: #FFFFFF;
+}
+
+
+/* ========================================
+   BODY
+======================================== */
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: var(--background);
+    color: var(--text-dark);
+    line-height: 1.6;
+    margin: 0;
+}
+
+
+/* ========================================
+   NAVBAR
+======================================== */
+
+.navbar.bg-primary,
+.main-navbar {
+    background-color: var(--primary-blue) !important;
+}
+
+.navbar-brand {
+    color: var(--white) !important;
+}
+
+.navbar .nav-link {
+    color: rgba(255, 255, 255, 0.9) !important;
+    transition: 0.2s ease;
+}
+
+.navbar .nav-link:hover,
+.navbar .nav-link.active {
+    color: var(--white) !important;
+}
+
+
+/* ========================================
+   BUTTON
+======================================== */
+
+.btn-primary {
+    background-color: var(--primary-blue) !important;
+    border-color: var(--primary-blue) !important;
+    color: var(--white) !important;
+    transition: 0.2s ease;
+}
+
+.btn-primary:hover {
+    background-color: var(--hover-blue) !important;
+    border-color: var(--hover-blue) !important;
+    color: var(--white) !important;
+}
+
+.btn-outline-primary {
+    color: var(--primary-blue) !important;
+    border-color: var(--primary-blue) !important;
+    transition: 0.2s ease;
+}
+
+.btn-outline-primary:hover {
+    background-color: var(--primary-blue) !important;
+    border-color: var(--primary-blue) !important;
+    color: var(--white) !important;
+}
+
+
+/* ========================================
+   TEXT DAN BACKGROUND
+======================================== */
+
+.text-primary {
+    color: var(--primary-blue) !important;
+}
+
+.bg-primary {
+    background-color: var(--primary-blue) !important;
+}
+
+.bg-light {
+    background-color: var(--background) !important;
+}
+
+
+/* ========================================
+   CARD
+======================================== */
+
+.card {
+    background-color: var(--white);
+    border-radius: 12px;
+    transition:
+        transform 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+.card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.06);
+}
+
+
+/* ========================================
+   HERO SECTION
+======================================== */
+
+.hero-section {
+    background-color: var(--white);
+}
+
+.min-vh-75 {
+    min-height: 0;
+}
+
+section h1 {
+    color: var(--text-dark);
+    line-height: 1.2;
+}
+
+section .lead {
+    font-size: 1.1rem;
+    line-height: 1.8;
+}
+
+
+/* ========================================
+   BADGE PERUSAHAAN
+======================================== */
+
+.company-badge {
+    display: inline-flex !important;
+    align-items: center !important;
+    gap: 9px !important;
+
+    padding: 8px 18px !important;
+
+    width: fit-content !important;
+
+    background: #EAF2FF !important;
+    color: #1769E0 !important;
+
+    border: none !important;
+    border-radius: 50px !important;
+
+    font-family: Arial, sans-serif !important;
+    font-size: 14px !important;
+    font-weight: 600 !important;
+
+    line-height: 1 !important;
+    text-decoration: none !important;
+}
+
+.company-badge-dot {
+    display: block !important;
+
+    width: 8px !important;
+    min-width: 8px !important;
+
+    height: 8px !important;
+    min-height: 8px !important;
+
+    background: #1769E0 !important;
+
+    border-radius: 50% !important;
+
+    flex-shrink: 0 !important;
+}
+
+
+/* ========================================
+   HOME HERO
+======================================== */
+
+.home-hero {
+    overflow: hidden;
+}
+
+.home-hero-row {
+    min-height: 0 !important;
+}
+
+.home-hero-content {
+    min-width: 0;
+    position: relative;
+    z-index: 2;
+}
+
+
+/* ========================================
+   KOTAK FOTO GEDUNG
+======================================== */
+
+.home-hero-image {
+    min-width: 0;
+    padding: 0 !important;
+
+    /* Menggeser seluruh kotak foto ke kanan */
+    transform: translateX(120px);
+}
+
+
+/* ========================================
+   FOTO GEDUNG
+======================================== */
+
+.hero-building {
+    display: block;
+
+    width: 100%;
+    height: 420px;
+
+    overflow: hidden;
+
+    border-radius: 16px;
+
+    background-color: var(--white);
+
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.hero-building img {
+    display: block;
+
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+    object-position: center;
+}
+
+
+/* ========================================
+   LINK
+======================================== */
+
+a {
+    transition: color 0.2s ease;
+}
+
+
+/* ========================================
+   FOOTER
+======================================== */
+
+footer.bg-dark {
+    background-color: var(--dark-blue) !important;
+}
+
+.main-footer {
+    background-color: var(--dark-blue) !important;
+    color: var(--white);
+}
+
+.main-footer a {
+    color: var(--white) !important;
+    text-decoration: none;
+}
+
+.main-footer a:hover {
+    color: var(--white) !important;
+    opacity: 0.75;
+}
+
+
+/* ========================================
+   FORM
+======================================== */
+
+.form-control:focus,
+.form-select:focus {
+    border-color: var(--primary-blue);
+
+    box-shadow:
+        0 0 0 0.2rem rgba(11, 61, 145, 0.15);
+}
+
+
+/* ========================================
+   HR
+======================================== */
+
+hr {
+    opacity: 0.15;
+}
+
+
+/* ========================================
+   RESPONSIVE TABLET
+======================================== */
+
+@media (max-width: 991.98px) {
+
+    .home-hero-image {
+        transform: none;
+    }
+
+    .hero-building {
+        width: 100%;
+        height: 350px;
+    }
+
+    section h1 {
+        font-size: calc(1.5rem + 2vw);
+    }
+}
+
+
+/* ========================================
+   RESPONSIVE HP
+======================================== */
+
+@media (max-width: 767.98px) {
+
+    .navbar-brand {
+        font-size: 15px;
+    }
+
+    .navbar-brand img {
+        width: 38px !important;
+        height: 38px !important;
+    }
+
+    .home-hero-image {
+        transform: none;
+    }
+
+    .hero-building {
+        width: 100%;
+        height: 280px;
+        border-radius: 14px;
+    }
+
+    section .lead {
+        font-size: 1rem;
+    }
+
+    .btn-lg {
+        font-size: 1rem;
+    }
+
+    .company-badge {
+        font-size: 13px;
+        padding: 8px 16px;
+    }
+}
+
+
+/* ========================================
+   RESPONSIVE HP KECIL
+======================================== */
+
+@media (max-width: 400px) {
+
+    .hero-building {
+        height: 220px;
+    }
+
+    .btn-lg {
+        width: 100%;
+        margin-right: 0 !important;
+        margin-bottom: 10px;
+    }
+
+    .company-badge {
+        font-size: 12px;
+        padding: 8px 14px;
+    }
+}
